@@ -1,0 +1,27 @@
+#ifndef POKEMON_VECTOR_HPP
+#define POKEMON_VECTOR_HPP
+
+#include "Pokemon.hpp"
+#include <iostream>
+#include <vector>
+
+class Pokemon_vector{
+
+    std::vector<Pokemon> pokemons;
+
+    public:
+      Pokemon_vector();
+      virtual ~Pokemon_vector();
+
+      Pokemon getByID(int ID);
+      Pokemon getByName(std::string name);
+      void displayByID();
+      void displayByName();
+
+      static bool compareByID(Pokemon pkmn1, Pokemon pkmn2);
+      static bool compareByName(Pokemon pkmn1, Pokemon pkmn2);
+
+      void addPokemon(Pokemon pokemon);
+  };
+
+#endif

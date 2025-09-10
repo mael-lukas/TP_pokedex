@@ -9,19 +9,19 @@
 
 class Pokemon {
 
-  private:
     int id;
     std::string name;
-    double hitPoints;
+    int evolution;
+    double maxHP;
+    double currentHP;
     double attack;
     double defense;
-    int generation;
     static int counter;
 
 
   public:
     Pokemon() = delete;
-    Pokemon(int id, std::string name, double hitPoints, double attack, double defense, int generation);
+    Pokemon(int id, std::string name, double maxHP, double attack, double defense);
     Pokemon(const Pokemon &other);
     ~Pokemon();
 
@@ -29,10 +29,9 @@ class Pokemon {
 
     int getId() const {return id;}
     std::string getName() const {return name;}
-    double getHp() const {return hitPoints;}
+    double getHp() const {return currentHP;}
     double getAtk() const {return attack;}
     double getDef() const {return defense;}
-    int getGen() const {return generation;}
     static int getCounter() {return counter;}
 
     void attackOther(Pokemon &other);
