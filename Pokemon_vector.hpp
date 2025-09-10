@@ -11,7 +11,6 @@ class Pokemon_vector{
 
     public:
       Pokemon_vector();
-      virtual ~Pokemon_vector();
 
       Pokemon getByID(int ID);
       Pokemon getByName(std::string name);

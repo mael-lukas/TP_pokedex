@@ -7,9 +7,6 @@ Pokemon_vector::Pokemon_vector() {
   std::vector<Pokemon> pokemons;
 }
 
-Pokemon_vector::~Pokemon_vector() {
-}
-
 Pokemon Pokemon_vector::getByID(int ID){
   for(Pokemon pokemon: pokemons){
     if(pokemon.getId() == ID){

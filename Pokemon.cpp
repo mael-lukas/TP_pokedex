@@ -24,7 +24,7 @@ Pokemon::~Pokemon() {
 }
 
 void Pokemon::displayInfo() const{
-  std::cout << name << " Current HP: " << currentHP << " HP (max: " << maxHP << ")  ATK: " << attack << "  DEF " << defense << std::endl;
+  std::cout << name << ":  Current HP: " << currentHP << " HP (max: " << maxHP << ")  ATK: " << attack << "  DEF " << defense << std::endl;
 }
 
 void Pokemon::takeDamage(double damage){

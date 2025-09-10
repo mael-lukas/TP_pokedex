@@ -25,6 +25,8 @@ int main() {
     Pokedex* pokedex2 = Pokedex::getInstance();
 
     pokedex->displayByName();
+    Pokemon mienshao_3 = pokedex->getByName("Mienshao");
+    mienshao_3.displayInfo();
 
     return 0;
 }
