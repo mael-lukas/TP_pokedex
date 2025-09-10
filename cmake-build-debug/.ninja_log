@@ -1,0 +1,8 @@
+# ninja log v6
+535	600	1757504509885716802	beuzalors	264eecaac395c23e
+2	804	1757425502449345177	CMakeFiles/beuzalors.dir/Pokemon.cpp.o	f7b95a42cdb422b7
+1	535	1757504509351714387	CMakeFiles/beuzalors.dir/main.cpp.o	a486f678fa5c45fe
+0	22	1757505482785786654	build.ninja	897cb7f43f567bcf
+2	911	1757505486869647443	CMakeFiles/beuzalors.dir/main.cpp.o	f515389877ff911a
+4	937	1757505486871647376	CMakeFiles/beuzalors.dir/Pokemon.cpp.o	126f5cda6142a811
+937	1063	1757505487804616191	beuzalors	264eecaac395c23e
