@@ -7,7 +7,10 @@
 
 class Pokemon_vector{
 
-    std::vector<Pokemon> pokemons;
+	std::vector<Pokemon> pokemons;
+
+	protected:
+		std::vector<Pokemon>& getPokemons();
 
     public:
       Pokemon_vector();
@@ -19,8 +22,6 @@ class Pokemon_vector{
 
       static bool compareByID(Pokemon pkmn1, Pokemon pkmn2);
       static bool compareByName(Pokemon pkmn1, Pokemon pkmn2);
-
-      void addPokemon(Pokemon pokemon);
   };
 
 #endif

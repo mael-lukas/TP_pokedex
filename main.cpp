@@ -2,6 +2,7 @@
 #include "Pokemon.hpp"
 #include <SFML/Graphics.hpp>
 #include "Pokedex.hpp"
+#include "Pokemon_party.hpp"
 
 int main() {
 
@@ -27,6 +28,12 @@ int main() {
     pokedex->displayByName();
     Pokemon mienshao_3 = pokedex->getByName("Mienshao");
     mienshao_3.displayInfo();
+
+    Pokemon_party party;
+    party.addToParty(mienshao_3);
+    party.addToParty(ludicolo);
+    party.removeFromParty(ludicolo);
+    party.addToParty(pokedex->getByID(576));
 
     return 0;
 }

@@ -28,14 +28,14 @@ Pokedex::Pokedex() {
             double attack = std::stod(donneesLigne[6]);
             double defense = std::stod(donneesLigne[7]);
             Pokemon pokemon_temp(id,name,maxHP,attack,defense);
-            addPokemon(pokemon_temp);
+            getPokemons().push_back(pokemon_temp);
           }
           cmpt++;
           // Affiche les données de la ligne
-          for (const auto& valeur : donneesLigne) {
+          /*for (const auto& valeur : donneesLigne) {
             std::cout << valeur << " "; // Affiche les valeurs séparées par un espace
           }
-          std::cout << std::endl;
+          std::cout << std::endl;*/
         }
           fichier.close(); // Ferme le fichier
       }
