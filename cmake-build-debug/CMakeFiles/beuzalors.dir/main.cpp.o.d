@@ -252,4 +252,5 @@ CMakeFiles/beuzalors.dir/main.cpp.o: \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/sstream \
  /usr/include/c++/13/bits/sstream.tcc \
  /home/administrateur/Documents/git/TP_pokedex/Pokemon_vector.hpp \
- /home/administrateur/Documents/git/TP_pokedex/Pokemon_party.hpp
+ /home/administrateur/Documents/git/TP_pokedex/Pokemon_PC.hpp \
+ /home/administrateur/Documents/git/TP_pokedex/Pokemon_team.hpp

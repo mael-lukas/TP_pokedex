@@ -2,7 +2,8 @@
 #include "Pokemon.hpp"
 #include <SFML/Graphics.hpp>
 #include "Pokedex.hpp"
-#include "Pokemon_party.hpp"
+#include "Pokemon_PC.hpp"
+#include "Pokemon_team.hpp"
 
 int main() {
 
@@ -26,14 +27,24 @@ int main() {
     Pokedex* pokedex2 = Pokedex::getInstance();
 
     pokedex->displayByName();
-    Pokemon mienshao_3 = pokedex->getByName("Mienshao");
-    mienshao_3.displayInfo();
+    Pokemon throh = pokedex->getByName("Throh");
+    throh.displayInfo();
 
-    Pokemon_party party;
-    party.addToParty(mienshao_3);
-    party.addToParty(ludicolo);
-    party.removeFromParty(ludicolo);
-    party.addToParty(pokedex->getByID(576));
+    std::cout<<std::endl;
+
+    Pokemon_PC PC;
+    PC.addToParty(throh);
+    PC.addToParty(ludicolo);
+    PC.removeFromParty(ludicolo);
+    PC.addToParty(pokedex->getByID(576));
+
+    std::cout<<std::endl;
+
+    Pokemon_team team(PC);
+    PC.addToParty(pokedex->getByName("Chandelure"));
+    std::cout<<std::endl;
+    PC.getByName("Chandelure").attackOther(throh);
+    PC.displayParty();
 
     return 0;
 }

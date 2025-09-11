@@ -177,29 +177,53 @@ Pokemon.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon.cpp.s
 .PHONY : Pokemon.cpp.s
 
-Pokemon_party.o: Pokemon_party.cpp.o
-.PHONY : Pokemon_party.o
+Pokemon_PC.o: Pokemon_PC.cpp.o
+.PHONY : Pokemon_PC.o
 
 # target to build an object file
-Pokemon_party.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_party.cpp.o
-.PHONY : Pokemon_party.cpp.o
+Pokemon_PC.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.o
+.PHONY : Pokemon_PC.cpp.o
 
-Pokemon_party.i: Pokemon_party.cpp.i
-.PHONY : Pokemon_party.i
+Pokemon_PC.i: Pokemon_PC.cpp.i
+.PHONY : Pokemon_PC.i
 
 # target to preprocess a source file
-Pokemon_party.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_party.cpp.i
-.PHONY : Pokemon_party.cpp.i
+Pokemon_PC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.i
+.PHONY : Pokemon_PC.cpp.i
 
-Pokemon_party.s: Pokemon_party.cpp.s
-.PHONY : Pokemon_party.s
+Pokemon_PC.s: Pokemon_PC.cpp.s
+.PHONY : Pokemon_PC.s
 
 # target to generate assembly for a file
-Pokemon_party.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_party.cpp.s
-.PHONY : Pokemon_party.cpp.s
+Pokemon_PC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.s
+.PHONY : Pokemon_PC.cpp.s
+
+Pokemon_team.o: Pokemon_team.cpp.o
+.PHONY : Pokemon_team.o
+
+# target to build an object file
+Pokemon_team.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_team.cpp.o
+.PHONY : Pokemon_team.cpp.o
+
+Pokemon_team.i: Pokemon_team.cpp.i
+.PHONY : Pokemon_team.i
+
+# target to preprocess a source file
+Pokemon_team.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_team.cpp.i
+.PHONY : Pokemon_team.cpp.i
+
+Pokemon_team.s: Pokemon_team.cpp.s
+.PHONY : Pokemon_team.s
+
+# target to generate assembly for a file
+Pokemon_team.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_team.cpp.s
+.PHONY : Pokemon_team.cpp.s
 
 Pokemon_vector.o: Pokemon_vector.cpp.o
 .PHONY : Pokemon_vector.o
@@ -264,9 +288,12 @@ help:
 	@echo "... Pokemon.o"
 	@echo "... Pokemon.i"
 	@echo "... Pokemon.s"
-	@echo "... Pokemon_party.o"
-	@echo "... Pokemon_party.i"
-	@echo "... Pokemon_party.s"
+	@echo "... Pokemon_PC.o"
+	@echo "... Pokemon_PC.i"
+	@echo "... Pokemon_PC.s"
+	@echo "... Pokemon_team.o"
+	@echo "... Pokemon_team.i"
+	@echo "... Pokemon_team.s"
 	@echo "... Pokemon_vector.o"
 	@echo "... Pokemon_vector.i"
 	@echo "... Pokemon_vector.s"

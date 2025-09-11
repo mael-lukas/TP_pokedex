@@ -1,16 +1,16 @@
-#include "Pokemon_party.hpp"
+#include "Pokemon_PC.hpp"
 #include <vector>
 
-Pokemon_party::Pokemon_party() : Pokemon_vector() {}
+Pokemon_PC::Pokemon_PC() : Pokemon_vector() {}
 
-Pokemon_party::~Pokemon_party(){}
+Pokemon_PC::~Pokemon_PC(){}
 
-void Pokemon_party::addToParty(Pokemon pokemon){
+void Pokemon_PC::addToParty(Pokemon pokemon){
   getPokemons().push_back(pokemon);
   std::cout << pokemon.getName() << " (ID: " << pokemon.getId() << ") added to party!" << std::endl;
 }
 
-void Pokemon_party::removeFromParty(Pokemon pokemon){
+void Pokemon_PC::removeFromParty(Pokemon pokemon){
   int index = 0;
   for(Pokemon partymon: getPokemons()){
     if(partymon.getName() == pokemon.getName()){
@@ -18,5 +18,12 @@ void Pokemon_party::removeFromParty(Pokemon pokemon){
         std::cout << pokemon.getName() << " (ID: " << pokemon.getId() << ") removed from party" << std::endl;
     }
     index++;
+  }
+}
+
+void Pokemon_PC::displayParty() {
+  std::cout<<"Here are all the Pokemons in your PC:"<<std::endl;
+  for(Pokemon pokemon: getPokemons()) {
+    pokemon.displayInfo();
   }
 }

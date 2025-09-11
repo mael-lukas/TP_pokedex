@@ -125,19 +125,33 @@ CMakeFiles/beuzalors.dir/Pokemon_vector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/beuzalors.dir/Pokemon_vector.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/administrateur/Documents/git/TP_pokedex/Pokemon_vector.cpp -o CMakeFiles/beuzalors.dir/Pokemon_vector.cpp.s
 
-CMakeFiles/beuzalors.dir/Pokemon_party.cpp.o: CMakeFiles/beuzalors.dir/flags.make
-CMakeFiles/beuzalors.dir/Pokemon_party.cpp.o: /home/administrateur/Documents/git/TP_pokedex/Pokemon_party.cpp
-CMakeFiles/beuzalors.dir/Pokemon_party.cpp.o: CMakeFiles/beuzalors.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/administrateur/Documents/git/TP_pokedex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/beuzalors.dir/Pokemon_party.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beuzalors.dir/Pokemon_party.cpp.o -MF CMakeFiles/beuzalors.dir/Pokemon_party.cpp.o.d -o CMakeFiles/beuzalors.dir/Pokemon_party.cpp.o -c /home/administrateur/Documents/git/TP_pokedex/Pokemon_party.cpp
+CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.o: CMakeFiles/beuzalors.dir/flags.make
+CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.o: /home/administrateur/Documents/git/TP_pokedex/Pokemon_PC.cpp
+CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.o: CMakeFiles/beuzalors.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/administrateur/Documents/git/TP_pokedex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.o -MF CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.o.d -o CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.o -c /home/administrateur/Documents/git/TP_pokedex/Pokemon_PC.cpp
 
-CMakeFiles/beuzalors.dir/Pokemon_party.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/beuzalors.dir/Pokemon_party.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/administrateur/Documents/git/TP_pokedex/Pokemon_party.cpp > CMakeFiles/beuzalors.dir/Pokemon_party.cpp.i
+CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/administrateur/Documents/git/TP_pokedex/Pokemon_PC.cpp > CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.i
 
-CMakeFiles/beuzalors.dir/Pokemon_party.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/beuzalors.dir/Pokemon_party.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/administrateur/Documents/git/TP_pokedex/Pokemon_party.cpp -o CMakeFiles/beuzalors.dir/Pokemon_party.cpp.s
+CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/administrateur/Documents/git/TP_pokedex/Pokemon_PC.cpp -o CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.s
+
+CMakeFiles/beuzalors.dir/Pokemon_team.cpp.o: CMakeFiles/beuzalors.dir/flags.make
+CMakeFiles/beuzalors.dir/Pokemon_team.cpp.o: /home/administrateur/Documents/git/TP_pokedex/Pokemon_team.cpp
+CMakeFiles/beuzalors.dir/Pokemon_team.cpp.o: CMakeFiles/beuzalors.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/administrateur/Documents/git/TP_pokedex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/beuzalors.dir/Pokemon_team.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/beuzalors.dir/Pokemon_team.cpp.o -MF CMakeFiles/beuzalors.dir/Pokemon_team.cpp.o.d -o CMakeFiles/beuzalors.dir/Pokemon_team.cpp.o -c /home/administrateur/Documents/git/TP_pokedex/Pokemon_team.cpp
+
+CMakeFiles/beuzalors.dir/Pokemon_team.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/beuzalors.dir/Pokemon_team.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/administrateur/Documents/git/TP_pokedex/Pokemon_team.cpp > CMakeFiles/beuzalors.dir/Pokemon_team.cpp.i
+
+CMakeFiles/beuzalors.dir/Pokemon_team.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/beuzalors.dir/Pokemon_team.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/administrateur/Documents/git/TP_pokedex/Pokemon_team.cpp -o CMakeFiles/beuzalors.dir/Pokemon_team.cpp.s
 
 # Object files for target beuzalors
 beuzalors_OBJECTS = \
@@ -145,7 +159,8 @@ beuzalors_OBJECTS = \
 "CMakeFiles/beuzalors.dir/Pokemon.cpp.o" \
 "CMakeFiles/beuzalors.dir/Pokedex.cpp.o" \
 "CMakeFiles/beuzalors.dir/Pokemon_vector.cpp.o" \
-"CMakeFiles/beuzalors.dir/Pokemon_party.cpp.o"
+"CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.o" \
+"CMakeFiles/beuzalors.dir/Pokemon_team.cpp.o"
 
 # External object files for target beuzalors
 beuzalors_EXTERNAL_OBJECTS =
@@ -154,10 +169,11 @@ beuzalors: CMakeFiles/beuzalors.dir/main.cpp.o
 beuzalors: CMakeFiles/beuzalors.dir/Pokemon.cpp.o
 beuzalors: CMakeFiles/beuzalors.dir/Pokedex.cpp.o
 beuzalors: CMakeFiles/beuzalors.dir/Pokemon_vector.cpp.o
-beuzalors: CMakeFiles/beuzalors.dir/Pokemon_party.cpp.o
+beuzalors: CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.o
+beuzalors: CMakeFiles/beuzalors.dir/Pokemon_team.cpp.o
 beuzalors: CMakeFiles/beuzalors.dir/build.make
 beuzalors: CMakeFiles/beuzalors.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/administrateur/Documents/git/TP_pokedex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable beuzalors"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/administrateur/Documents/git/TP_pokedex/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable beuzalors"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/beuzalors.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -3,13 +3,15 @@
 
 #include "Pokemon_vector.hpp"
 
-class Pokemon_party: public Pokemon_vector {
+class Pokemon_PC: public Pokemon_vector {
   public:
-    Pokemon_party();
-    ~Pokemon_party();
+    Pokemon_PC();
+    ~Pokemon_PC();
 
 	void addToParty(Pokemon pokemon);
     void removeFromParty(Pokemon pokemon);
+
+	void displayParty();
 };
 
 #endif
