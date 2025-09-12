@@ -4,15 +4,14 @@
 #include <algorithm>
 
 Pokemon_vector::Pokemon_vector() {
-  std::vector<Pokemon> pokemons;
 }
 
 std::vector<Pokemon>& Pokemon_vector::getPokemons(){ //Le & indique qu'on renvoie le vrai vecteur pokemons et pas une copie temporaire pour l'appel
   return pokemons;
 }
 
-Pokemon Pokemon_vector::getByID(int ID){
-  for(Pokemon pokemon: getPokemons()){
+Pokemon& Pokemon_vector::getByID(int ID){
+  for(Pokemon &pokemon: getPokemons()){
     if(pokemon.getId() == ID){
       return pokemon;
     }
@@ -20,8 +19,8 @@ Pokemon Pokemon_vector::getByID(int ID){
   std::cerr << "Found no Pokemon with ID: " << ID << std::endl;
 };
 
-Pokemon Pokemon_vector::getByName(std::string name){
-  for(Pokemon pokemon: getPokemons()){
+Pokemon& Pokemon_vector::getByName(std::string name){
+  for(Pokemon &pokemon: getPokemons()){
     if(pokemon.getName() == name){
       return pokemon;
     }

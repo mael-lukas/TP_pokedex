@@ -33,18 +33,17 @@ int main() {
     std::cout<<std::endl;
 
     Pokemon_PC PC;
-    PC.addToParty(throh);
-    PC.addToParty(ludicolo);
-    PC.removeFromParty(ludicolo);
-    PC.addToParty(pokedex->getByID(576));
-
+    PC.addToPC(throh);
+    PC.addToPC(ludicolo);
+    PC.removeFromPC(ludicolo);
+    PC.addToPC(pokedex->getByID(576));
     std::cout<<std::endl;
 
     Pokemon_team team(PC);
-    PC.addToParty(pokedex->getByName("Chandelure"));
+    PC.addToPC(pokedex->getByName("Chandelure"));
     std::cout<<std::endl;
-    PC.getByName("Chandelure").attackOther(throh);
-    PC.displayParty();
+
+    PC.displayPC();
 
     return 0;
 }

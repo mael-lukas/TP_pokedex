@@ -8,10 +8,10 @@ class Pokemon_PC: public Pokemon_vector {
     Pokemon_PC();
     ~Pokemon_PC();
 
-	void addToParty(Pokemon pokemon);
-    void removeFromParty(Pokemon pokemon);
+	void addToPC(Pokemon pokemon);
+    void removeFromPC(Pokemon pokemon);
 
-	void displayParty();
+	void displayPC();
 };
 
 #endif
