@@ -10,6 +10,8 @@ class Pokemon_team: public Pokemon_vector {
       Pokemon_team() = delete;
       Pokemon_team(Pokemon_PC &PC);
       ~Pokemon_team();
+
+	  void addToTeam(Pokemon& pokemon);
 };
 
 #endif

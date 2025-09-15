@@ -12,6 +12,8 @@ class Pokemon_PC: public Pokemon_vector {
     void removeFromPC(Pokemon pokemon);
 
 	void displayPC();
+	bool isInPC(std::string name);
+	bool isInPC(int id);
 };
 
 #endif

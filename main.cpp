@@ -39,11 +39,12 @@ int main() {
     PC.addToPC(pokedex->getByID(576));
     std::cout<<std::endl;
 
-    Pokemon_team team(PC);
     PC.addToPC(pokedex->getByName("Chandelure"));
     std::cout<<std::endl;
-
     PC.displayPC();
+    std::cout << std::endl;
+
+    Pokemon_team team(PC);
 
     return 0;
 }

@@ -27,3 +27,21 @@ void Pokemon_PC::displayPC() {
     pokemon.displayInfo();
   }
 }
+
+bool Pokemon_PC::isInPC(std::string name) {
+  for (Pokemon pkmn : getPokemons()) {
+    if (pkmn.getName() == name) {
+      return true;
+    }
+  }
+  return false;
+}
+
+bool Pokemon_PC::isInPC(int id) {
+  for (Pokemon pkmn : getPokemons()) {
+    if (pkmn.getId() == id) {
+      return true;
+    }
+  }
+  return false;
+}
