@@ -15,8 +15,8 @@ class Pokemon_vector{
     public:
       Pokemon_vector();
 
-      Pokemon& getByID(int ID);
-      Pokemon& getByName(std::string name);
+      Pokemon& findById(int ID);
+      Pokemon& findByName(std::string name);
       void displayByID();
       void displayByName();
 

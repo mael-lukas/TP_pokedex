@@ -27,7 +27,7 @@ int main() {
     Pokedex* pokedex2 = Pokedex::getInstance();
 
     pokedex->displayByName();
-    Pokemon throh = pokedex->getByName("Throh");
+    Pokemon throh = pokedex->findByName("Throh");
     throh.displayInfo();
 
     std::cout<<std::endl;
@@ -36,15 +36,41 @@ int main() {
     PC.addToPC(throh);
     PC.addToPC(ludicolo);
     PC.removeFromPC(ludicolo);
-    PC.addToPC(pokedex->getByID(576));
+    PC.addToPC(pokedex->findById(576));
     std::cout<<std::endl;
 
-    PC.addToPC(pokedex->getByName("Chandelure"));
+    PC.addToPC(pokedex->findByName("Chandelure"));
     std::cout<<std::endl;
     PC.displayPC();
     std::cout << std::endl;
 
     Pokemon_team team(PC);
+    team.addToTeam("Throh");
+    team.addToTeam(576);
+    team.addToTeam("Mienshao");
+    std::cout << std::endl;
+
+    team.displayTeam();
+    team.removeFromTeam(538);
+    std::cout << std::endl;
+    team.displayTeam();
+
+    PC.addToPC(pokedex->findByName("Haxorus"));
+    PC.addToPC(pokedex->findByName("Serperior"));
+    PC.addToPC(pokedex->findByName("Cryogonal"));
+    PC.addToPC(pokedex->findByName("Cofagrigus"));
+    PC.addToPC(pokedex->findByName("Scolipede"));
+    team.addToTeam("Haxorus");
+    team.addToTeam("Serperior");
+    team.addToTeam("Cryogonal");
+    team.addToTeam("Cofagrigus");
+    team.addToTeam("Scolipede");
+    team.addToTeam("Throh");
+    team.removeFromTeam(497);
+    team.removeFromTeam(612);
+    std::cout << std::endl;
+
+    team.displayTeam();
 
     return 0;
 }

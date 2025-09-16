@@ -7,7 +7,7 @@ Pokemon_PC::~Pokemon_PC(){}
 
 void Pokemon_PC::addToPC(Pokemon pokemon){
   getPokemons().push_back(pokemon);
-  std::cout << pokemon.getName() << " (ID: " << pokemon.getId() << ") added to party!" << std::endl;
+  std::cout << pokemon.getName() << " (ID: " << pokemon.getId() << ") added to PC !" << std::endl;
 }
 
 void Pokemon_PC::removeFromPC(Pokemon pokemon){
@@ -15,7 +15,7 @@ void Pokemon_PC::removeFromPC(Pokemon pokemon){
   for(Pokemon partymon: getPokemons()){
     if(partymon.getName() == pokemon.getName()){
         getPokemons().erase(getPokemons().begin() + index);
-        std::cout << pokemon.getName() << " (ID: " << pokemon.getId() << ") removed from party" << std::endl;
+        std::cout << pokemon.getName() << " (ID: " << pokemon.getId() << ") removed from PC" << std::endl;
     }
     index++;
   }

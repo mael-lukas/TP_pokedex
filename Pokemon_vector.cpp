@@ -10,7 +10,7 @@ std::vector<Pokemon>& Pokemon_vector::getPokemons(){ //Le & indique qu'on renvoi
   return pokemons;
 }
 
-Pokemon& Pokemon_vector::getByID(int ID){
+Pokemon& Pokemon_vector::findById(int ID){
   for(Pokemon &pokemon: getPokemons()){
     if(pokemon.getId() == ID){
       return pokemon;
@@ -19,7 +19,7 @@ Pokemon& Pokemon_vector::getByID(int ID){
   std::cerr << "Found no Pokemon with ID: " << ID << std::endl;
 };
 
-Pokemon& Pokemon_vector::getByName(std::string name){
+Pokemon& Pokemon_vector::findByName(std::string name){
   for(Pokemon &pokemon: getPokemons()){
     if(pokemon.getName() == name){
       return pokemon;
