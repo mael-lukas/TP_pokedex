@@ -68,6 +68,8 @@ int main() {
     team.addToTeam("Throh");
     team.removeFromTeam(497);
     team.removeFromTeam(612);
+
+    team.findByName("Gothitelle").attackOther(team.findByName("Cryogonal"));
     std::cout << std::endl;
 
     team.displayTeam();

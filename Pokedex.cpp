@@ -28,7 +28,7 @@ Pokedex::Pokedex() {
             double attack = std::stod(donneesLigne[6]);
             double defense = std::stod(donneesLigne[7]);
             Pokemon pokemon_temp(id,name,maxHP,attack,defense);
-            getPokemons().push_back(pokemon_temp);
+            pokemons.push_back(pokemon_temp);
           }
           cmpt++;
           // Affiche les données de la ligne

@@ -6,12 +6,8 @@
 Pokemon_vector::Pokemon_vector() {
 }
 
-std::vector<Pokemon>& Pokemon_vector::getPokemons(){ //Le & indique qu'on renvoie le vrai vecteur pokemons et pas une copie temporaire pour l'appel
-  return pokemons;
-}
-
 Pokemon& Pokemon_vector::findById(int ID){
-  for(Pokemon &pokemon: getPokemons()){
+  for(Pokemon &pokemon: pokemons){
     if(pokemon.getId() == ID){
       return pokemon;
     }
@@ -20,7 +16,7 @@ Pokemon& Pokemon_vector::findById(int ID){
 };
 
 Pokemon& Pokemon_vector::findByName(std::string name){
-  for(Pokemon &pokemon: getPokemons()){
+  for(Pokemon &pokemon: pokemons){
     if(pokemon.getName() == name){
       return pokemon;
     }
@@ -37,7 +33,7 @@ bool Pokemon_vector::compareByName(Pokemon pkmn1, Pokemon pkmn2){
 }
 
 void Pokemon_vector::displayByID(){
-  std::vector<Pokemon> sorted_pokemons(getPokemons());
+  std::vector<Pokemon> sorted_pokemons(pokemons);
   std::sort(sorted_pokemons.begin(), sorted_pokemons.end(), compareByID);
   for (Pokemon pokemon : sorted_pokemons){
     pokemon.displayInfo();
@@ -45,7 +41,7 @@ void Pokemon_vector::displayByID(){
 };
 
 void Pokemon_vector::displayByName(){
-  std::vector<Pokemon> sorted_pokemons(getPokemons());
+  std::vector<Pokemon> sorted_pokemons(pokemons);
   std::sort(sorted_pokemons.begin(), sorted_pokemons.end(), compareByName);
   for (Pokemon pokemon : sorted_pokemons){
     pokemon.displayInfo();

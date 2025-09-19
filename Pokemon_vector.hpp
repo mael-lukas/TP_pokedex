@@ -7,10 +7,8 @@
 
 class Pokemon_vector{
 
-	std::vector<Pokemon> pokemons;
-
 	protected:
-		std::vector<Pokemon>& getPokemons();
+		std::vector<Pokemon> pokemons;
 
     public:
       Pokemon_vector();
