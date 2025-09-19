@@ -4,6 +4,7 @@
 #include "State.hpp"
 #include "Game.hpp"
 #include "Capture.hpp"
+#include "Arena.hpp"
 
 class Exploration : public State {
 public:

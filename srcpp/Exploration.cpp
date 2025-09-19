@@ -5,5 +5,10 @@ Exploration::Exploration(Game* game) : State(game) {}
 
 void Exploration::testBehaviour() {
 	std::cout << "Exploration" << std::endl;
-	game->changeState(new Capture(game));
+	if (rand() % 2 == 1) {
+		game->changeState(new Capture(game));
+	}
+	else {
+		game->changeState(new Arena(game));
+	}
 }
