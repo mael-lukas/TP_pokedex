@@ -129,6 +129,126 @@ beuzalors/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/build
 .PHONY : beuzalors/fast
 
+Arena.o: Arena.cpp.o
+.PHONY : Arena.o
+
+# target to build an object file
+Arena.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Arena.cpp.o
+.PHONY : Arena.cpp.o
+
+Arena.i: Arena.cpp.i
+.PHONY : Arena.i
+
+# target to preprocess a source file
+Arena.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Arena.cpp.i
+.PHONY : Arena.cpp.i
+
+Arena.s: Arena.cpp.s
+.PHONY : Arena.s
+
+# target to generate assembly for a file
+Arena.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Arena.cpp.s
+.PHONY : Arena.cpp.s
+
+Capture.o: Capture.cpp.o
+.PHONY : Capture.o
+
+# target to build an object file
+Capture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Capture.cpp.o
+.PHONY : Capture.cpp.o
+
+Capture.i: Capture.cpp.i
+.PHONY : Capture.i
+
+# target to preprocess a source file
+Capture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Capture.cpp.i
+.PHONY : Capture.cpp.i
+
+Capture.s: Capture.cpp.s
+.PHONY : Capture.s
+
+# target to generate assembly for a file
+Capture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Capture.cpp.s
+.PHONY : Capture.cpp.s
+
+Exploration.o: Exploration.cpp.o
+.PHONY : Exploration.o
+
+# target to build an object file
+Exploration.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Exploration.cpp.o
+.PHONY : Exploration.cpp.o
+
+Exploration.i: Exploration.cpp.i
+.PHONY : Exploration.i
+
+# target to preprocess a source file
+Exploration.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Exploration.cpp.i
+.PHONY : Exploration.cpp.i
+
+Exploration.s: Exploration.cpp.s
+.PHONY : Exploration.s
+
+# target to generate assembly for a file
+Exploration.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Exploration.cpp.s
+.PHONY : Exploration.cpp.s
+
+Game.o: Game.cpp.o
+.PHONY : Game.o
+
+# target to build an object file
+Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Game.cpp.o
+.PHONY : Game.cpp.o
+
+Game.i: Game.cpp.i
+.PHONY : Game.i
+
+# target to preprocess a source file
+Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Game.cpp.i
+.PHONY : Game.cpp.i
+
+Game.s: Game.cpp.s
+.PHONY : Game.s
+
+# target to generate assembly for a file
+Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Game.cpp.s
+.PHONY : Game.cpp.s
+
+GameOver.o: GameOver.cpp.o
+.PHONY : GameOver.o
+
+# target to build an object file
+GameOver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/GameOver.cpp.o
+.PHONY : GameOver.cpp.o
+
+GameOver.i: GameOver.cpp.i
+.PHONY : GameOver.i
+
+# target to preprocess a source file
+GameOver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/GameOver.cpp.i
+.PHONY : GameOver.cpp.i
+
+GameOver.s: GameOver.cpp.s
+.PHONY : GameOver.s
+
+# target to generate assembly for a file
+GameOver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/GameOver.cpp.s
+.PHONY : GameOver.cpp.s
+
 Pokedex.o: Pokedex.cpp.o
 .PHONY : Pokedex.o
 
@@ -249,6 +369,54 @@ Pokemon_vector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_vector.cpp.s
 .PHONY : Pokemon_vector.cpp.s
 
+State.o: State.cpp.o
+.PHONY : State.o
+
+# target to build an object file
+State.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/State.cpp.o
+.PHONY : State.cpp.o
+
+State.i: State.cpp.i
+.PHONY : State.i
+
+# target to preprocess a source file
+State.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/State.cpp.i
+.PHONY : State.cpp.i
+
+State.s: State.cpp.s
+.PHONY : State.s
+
+# target to generate assembly for a file
+State.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/State.cpp.s
+.PHONY : State.cpp.s
+
+TitleScreen.o: TitleScreen.cpp.o
+.PHONY : TitleScreen.o
+
+# target to build an object file
+TitleScreen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/TitleScreen.cpp.o
+.PHONY : TitleScreen.cpp.o
+
+TitleScreen.i: TitleScreen.cpp.i
+.PHONY : TitleScreen.i
+
+# target to preprocess a source file
+TitleScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/TitleScreen.cpp.i
+.PHONY : TitleScreen.cpp.i
+
+TitleScreen.s: TitleScreen.cpp.s
+.PHONY : TitleScreen.s
+
+# target to generate assembly for a file
+TitleScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/TitleScreen.cpp.s
+.PHONY : TitleScreen.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -282,6 +450,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... beuzalors"
+	@echo "... Arena.o"
+	@echo "... Arena.i"
+	@echo "... Arena.s"
+	@echo "... Capture.o"
+	@echo "... Capture.i"
+	@echo "... Capture.s"
+	@echo "... Exploration.o"
+	@echo "... Exploration.i"
+	@echo "... Exploration.s"
+	@echo "... Game.o"
+	@echo "... Game.i"
+	@echo "... Game.s"
+	@echo "... GameOver.o"
+	@echo "... GameOver.i"
+	@echo "... GameOver.s"
 	@echo "... Pokedex.o"
 	@echo "... Pokedex.i"
 	@echo "... Pokedex.s"
@@ -297,6 +480,12 @@ help:
 	@echo "... Pokemon_vector.o"
 	@echo "... Pokemon_vector.i"
 	@echo "... Pokemon_vector.s"
+	@echo "... State.o"
+	@echo "... State.i"
+	@echo "... State.s"
+	@echo "... TitleScreen.o"
+	@echo "... TitleScreen.i"
+	@echo "... TitleScreen.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
