@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Pokemon.hpp"
+#include "../incpp/Pokemon.hpp"
 
 int Pokemon::counter = 0;
 

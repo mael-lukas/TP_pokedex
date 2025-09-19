@@ -1,4 +1,4 @@
-#include "Pokemon_PC.hpp"
+#include "../incpp/Pokemon_PC.hpp"
 #include <vector>
 
 Pokemon_PC::Pokemon_PC() : Pokemon_vector() {}

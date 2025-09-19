@@ -1,9 +1,10 @@
 #include <iostream>
-#include "Pokemon.hpp"
+#include "../incpp/Pokemon.hpp"
 #include <SFML/Graphics.hpp>
-#include "Pokedex.hpp"
-#include "Pokemon_PC.hpp"
-#include "Pokemon_team.hpp"
+#include "../incpp/Pokedex.hpp"
+#include "../incpp/Pokemon_PC.hpp"
+#include "../incpp/Pokemon_team.hpp"
+#include "../incpp/Game.hpp"
 
 int main() {
 
@@ -72,6 +73,11 @@ int main() {
     std::cout << std::endl;
 
     team.displayTeam();
+
+    Game* game = new Game();
+    for (int i=0;i<10;i++) {
+        game->testBehaviour();
+    }
 
     return 0;
 }

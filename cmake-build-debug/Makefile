@@ -129,149 +129,317 @@ beuzalors/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/build
 .PHONY : beuzalors/fast
 
-Pokedex.o: Pokedex.cpp.o
-.PHONY : Pokedex.o
+srcpp/Arena.o: srcpp/Arena.cpp.o
+.PHONY : srcpp/Arena.o
 
 # target to build an object file
-Pokedex.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokedex.cpp.o
-.PHONY : Pokedex.cpp.o
+srcpp/Arena.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Arena.cpp.o
+.PHONY : srcpp/Arena.cpp.o
 
-Pokedex.i: Pokedex.cpp.i
-.PHONY : Pokedex.i
+srcpp/Arena.i: srcpp/Arena.cpp.i
+.PHONY : srcpp/Arena.i
 
 # target to preprocess a source file
-Pokedex.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokedex.cpp.i
-.PHONY : Pokedex.cpp.i
+srcpp/Arena.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Arena.cpp.i
+.PHONY : srcpp/Arena.cpp.i
 
-Pokedex.s: Pokedex.cpp.s
-.PHONY : Pokedex.s
+srcpp/Arena.s: srcpp/Arena.cpp.s
+.PHONY : srcpp/Arena.s
 
 # target to generate assembly for a file
-Pokedex.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokedex.cpp.s
-.PHONY : Pokedex.cpp.s
+srcpp/Arena.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Arena.cpp.s
+.PHONY : srcpp/Arena.cpp.s
 
-Pokemon.o: Pokemon.cpp.o
-.PHONY : Pokemon.o
+srcpp/Capture.o: srcpp/Capture.cpp.o
+.PHONY : srcpp/Capture.o
 
 # target to build an object file
-Pokemon.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon.cpp.o
-.PHONY : Pokemon.cpp.o
+srcpp/Capture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Capture.cpp.o
+.PHONY : srcpp/Capture.cpp.o
 
-Pokemon.i: Pokemon.cpp.i
-.PHONY : Pokemon.i
+srcpp/Capture.i: srcpp/Capture.cpp.i
+.PHONY : srcpp/Capture.i
 
 # target to preprocess a source file
-Pokemon.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon.cpp.i
-.PHONY : Pokemon.cpp.i
+srcpp/Capture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Capture.cpp.i
+.PHONY : srcpp/Capture.cpp.i
 
-Pokemon.s: Pokemon.cpp.s
-.PHONY : Pokemon.s
+srcpp/Capture.s: srcpp/Capture.cpp.s
+.PHONY : srcpp/Capture.s
 
 # target to generate assembly for a file
-Pokemon.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon.cpp.s
-.PHONY : Pokemon.cpp.s
+srcpp/Capture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Capture.cpp.s
+.PHONY : srcpp/Capture.cpp.s
 
-Pokemon_PC.o: Pokemon_PC.cpp.o
-.PHONY : Pokemon_PC.o
+srcpp/Exploration.o: srcpp/Exploration.cpp.o
+.PHONY : srcpp/Exploration.o
 
 # target to build an object file
-Pokemon_PC.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.o
-.PHONY : Pokemon_PC.cpp.o
+srcpp/Exploration.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Exploration.cpp.o
+.PHONY : srcpp/Exploration.cpp.o
 
-Pokemon_PC.i: Pokemon_PC.cpp.i
-.PHONY : Pokemon_PC.i
+srcpp/Exploration.i: srcpp/Exploration.cpp.i
+.PHONY : srcpp/Exploration.i
 
 # target to preprocess a source file
-Pokemon_PC.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.i
-.PHONY : Pokemon_PC.cpp.i
+srcpp/Exploration.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Exploration.cpp.i
+.PHONY : srcpp/Exploration.cpp.i
 
-Pokemon_PC.s: Pokemon_PC.cpp.s
-.PHONY : Pokemon_PC.s
+srcpp/Exploration.s: srcpp/Exploration.cpp.s
+.PHONY : srcpp/Exploration.s
 
 # target to generate assembly for a file
-Pokemon_PC.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_PC.cpp.s
-.PHONY : Pokemon_PC.cpp.s
+srcpp/Exploration.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Exploration.cpp.s
+.PHONY : srcpp/Exploration.cpp.s
 
-Pokemon_team.o: Pokemon_team.cpp.o
-.PHONY : Pokemon_team.o
+srcpp/Game.o: srcpp/Game.cpp.o
+.PHONY : srcpp/Game.o
 
 # target to build an object file
-Pokemon_team.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_team.cpp.o
-.PHONY : Pokemon_team.cpp.o
+srcpp/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Game.cpp.o
+.PHONY : srcpp/Game.cpp.o
 
-Pokemon_team.i: Pokemon_team.cpp.i
-.PHONY : Pokemon_team.i
+srcpp/Game.i: srcpp/Game.cpp.i
+.PHONY : srcpp/Game.i
 
 # target to preprocess a source file
-Pokemon_team.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_team.cpp.i
-.PHONY : Pokemon_team.cpp.i
+srcpp/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Game.cpp.i
+.PHONY : srcpp/Game.cpp.i
 
-Pokemon_team.s: Pokemon_team.cpp.s
-.PHONY : Pokemon_team.s
+srcpp/Game.s: srcpp/Game.cpp.s
+.PHONY : srcpp/Game.s
 
 # target to generate assembly for a file
-Pokemon_team.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_team.cpp.s
-.PHONY : Pokemon_team.cpp.s
+srcpp/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Game.cpp.s
+.PHONY : srcpp/Game.cpp.s
 
-Pokemon_vector.o: Pokemon_vector.cpp.o
-.PHONY : Pokemon_vector.o
+srcpp/GameOver.o: srcpp/GameOver.cpp.o
+.PHONY : srcpp/GameOver.o
 
 # target to build an object file
-Pokemon_vector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_vector.cpp.o
-.PHONY : Pokemon_vector.cpp.o
+srcpp/GameOver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/GameOver.cpp.o
+.PHONY : srcpp/GameOver.cpp.o
 
-Pokemon_vector.i: Pokemon_vector.cpp.i
-.PHONY : Pokemon_vector.i
+srcpp/GameOver.i: srcpp/GameOver.cpp.i
+.PHONY : srcpp/GameOver.i
 
 # target to preprocess a source file
-Pokemon_vector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_vector.cpp.i
-.PHONY : Pokemon_vector.cpp.i
+srcpp/GameOver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/GameOver.cpp.i
+.PHONY : srcpp/GameOver.cpp.i
 
-Pokemon_vector.s: Pokemon_vector.cpp.s
-.PHONY : Pokemon_vector.s
+srcpp/GameOver.s: srcpp/GameOver.cpp.s
+.PHONY : srcpp/GameOver.s
 
 # target to generate assembly for a file
-Pokemon_vector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/Pokemon_vector.cpp.s
-.PHONY : Pokemon_vector.cpp.s
+srcpp/GameOver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/GameOver.cpp.s
+.PHONY : srcpp/GameOver.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+srcpp/Pokedex.o: srcpp/Pokedex.cpp.o
+.PHONY : srcpp/Pokedex.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/main.cpp.o
-.PHONY : main.cpp.o
+srcpp/Pokedex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokedex.cpp.o
+.PHONY : srcpp/Pokedex.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+srcpp/Pokedex.i: srcpp/Pokedex.cpp.i
+.PHONY : srcpp/Pokedex.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/main.cpp.i
-.PHONY : main.cpp.i
+srcpp/Pokedex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokedex.cpp.i
+.PHONY : srcpp/Pokedex.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+srcpp/Pokedex.s: srcpp/Pokedex.cpp.s
+.PHONY : srcpp/Pokedex.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/main.cpp.s
-.PHONY : main.cpp.s
+srcpp/Pokedex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokedex.cpp.s
+.PHONY : srcpp/Pokedex.cpp.s
+
+srcpp/Pokemon.o: srcpp/Pokemon.cpp.o
+.PHONY : srcpp/Pokemon.o
+
+# target to build an object file
+srcpp/Pokemon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokemon.cpp.o
+.PHONY : srcpp/Pokemon.cpp.o
+
+srcpp/Pokemon.i: srcpp/Pokemon.cpp.i
+.PHONY : srcpp/Pokemon.i
+
+# target to preprocess a source file
+srcpp/Pokemon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokemon.cpp.i
+.PHONY : srcpp/Pokemon.cpp.i
+
+srcpp/Pokemon.s: srcpp/Pokemon.cpp.s
+.PHONY : srcpp/Pokemon.s
+
+# target to generate assembly for a file
+srcpp/Pokemon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokemon.cpp.s
+.PHONY : srcpp/Pokemon.cpp.s
+
+srcpp/Pokemon_PC.o: srcpp/Pokemon_PC.cpp.o
+.PHONY : srcpp/Pokemon_PC.o
+
+# target to build an object file
+srcpp/Pokemon_PC.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokemon_PC.cpp.o
+.PHONY : srcpp/Pokemon_PC.cpp.o
+
+srcpp/Pokemon_PC.i: srcpp/Pokemon_PC.cpp.i
+.PHONY : srcpp/Pokemon_PC.i
+
+# target to preprocess a source file
+srcpp/Pokemon_PC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokemon_PC.cpp.i
+.PHONY : srcpp/Pokemon_PC.cpp.i
+
+srcpp/Pokemon_PC.s: srcpp/Pokemon_PC.cpp.s
+.PHONY : srcpp/Pokemon_PC.s
+
+# target to generate assembly for a file
+srcpp/Pokemon_PC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokemon_PC.cpp.s
+.PHONY : srcpp/Pokemon_PC.cpp.s
+
+srcpp/Pokemon_team.o: srcpp/Pokemon_team.cpp.o
+.PHONY : srcpp/Pokemon_team.o
+
+# target to build an object file
+srcpp/Pokemon_team.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokemon_team.cpp.o
+.PHONY : srcpp/Pokemon_team.cpp.o
+
+srcpp/Pokemon_team.i: srcpp/Pokemon_team.cpp.i
+.PHONY : srcpp/Pokemon_team.i
+
+# target to preprocess a source file
+srcpp/Pokemon_team.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokemon_team.cpp.i
+.PHONY : srcpp/Pokemon_team.cpp.i
+
+srcpp/Pokemon_team.s: srcpp/Pokemon_team.cpp.s
+.PHONY : srcpp/Pokemon_team.s
+
+# target to generate assembly for a file
+srcpp/Pokemon_team.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokemon_team.cpp.s
+.PHONY : srcpp/Pokemon_team.cpp.s
+
+srcpp/Pokemon_vector.o: srcpp/Pokemon_vector.cpp.o
+.PHONY : srcpp/Pokemon_vector.o
+
+# target to build an object file
+srcpp/Pokemon_vector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokemon_vector.cpp.o
+.PHONY : srcpp/Pokemon_vector.cpp.o
+
+srcpp/Pokemon_vector.i: srcpp/Pokemon_vector.cpp.i
+.PHONY : srcpp/Pokemon_vector.i
+
+# target to preprocess a source file
+srcpp/Pokemon_vector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokemon_vector.cpp.i
+.PHONY : srcpp/Pokemon_vector.cpp.i
+
+srcpp/Pokemon_vector.s: srcpp/Pokemon_vector.cpp.s
+.PHONY : srcpp/Pokemon_vector.s
+
+# target to generate assembly for a file
+srcpp/Pokemon_vector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokemon_vector.cpp.s
+.PHONY : srcpp/Pokemon_vector.cpp.s
+
+srcpp/State.o: srcpp/State.cpp.o
+.PHONY : srcpp/State.o
+
+# target to build an object file
+srcpp/State.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/State.cpp.o
+.PHONY : srcpp/State.cpp.o
+
+srcpp/State.i: srcpp/State.cpp.i
+.PHONY : srcpp/State.i
+
+# target to preprocess a source file
+srcpp/State.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/State.cpp.i
+.PHONY : srcpp/State.cpp.i
+
+srcpp/State.s: srcpp/State.cpp.s
+.PHONY : srcpp/State.s
+
+# target to generate assembly for a file
+srcpp/State.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/State.cpp.s
+.PHONY : srcpp/State.cpp.s
+
+srcpp/TitleScreen.o: srcpp/TitleScreen.cpp.o
+.PHONY : srcpp/TitleScreen.o
+
+# target to build an object file
+srcpp/TitleScreen.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/TitleScreen.cpp.o
+.PHONY : srcpp/TitleScreen.cpp.o
+
+srcpp/TitleScreen.i: srcpp/TitleScreen.cpp.i
+.PHONY : srcpp/TitleScreen.i
+
+# target to preprocess a source file
+srcpp/TitleScreen.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/TitleScreen.cpp.i
+.PHONY : srcpp/TitleScreen.cpp.i
+
+srcpp/TitleScreen.s: srcpp/TitleScreen.cpp.s
+.PHONY : srcpp/TitleScreen.s
+
+# target to generate assembly for a file
+srcpp/TitleScreen.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/TitleScreen.cpp.s
+.PHONY : srcpp/TitleScreen.cpp.s
+
+srcpp/main.o: srcpp/main.cpp.o
+.PHONY : srcpp/main.o
+
+# target to build an object file
+srcpp/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/main.cpp.o
+.PHONY : srcpp/main.cpp.o
+
+srcpp/main.i: srcpp/main.cpp.i
+.PHONY : srcpp/main.i
+
+# target to preprocess a source file
+srcpp/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/main.cpp.i
+.PHONY : srcpp/main.cpp.i
+
+srcpp/main.s: srcpp/main.cpp.s
+.PHONY : srcpp/main.s
+
+# target to generate assembly for a file
+srcpp/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/main.cpp.s
+.PHONY : srcpp/main.cpp.s
 
 # Help Target
 help:
@@ -282,24 +450,45 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... beuzalors"
-	@echo "... Pokedex.o"
-	@echo "... Pokedex.i"
-	@echo "... Pokedex.s"
-	@echo "... Pokemon.o"
-	@echo "... Pokemon.i"
-	@echo "... Pokemon.s"
-	@echo "... Pokemon_PC.o"
-	@echo "... Pokemon_PC.i"
-	@echo "... Pokemon_PC.s"
-	@echo "... Pokemon_team.o"
-	@echo "... Pokemon_team.i"
-	@echo "... Pokemon_team.s"
-	@echo "... Pokemon_vector.o"
-	@echo "... Pokemon_vector.i"
-	@echo "... Pokemon_vector.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... srcpp/Arena.o"
+	@echo "... srcpp/Arena.i"
+	@echo "... srcpp/Arena.s"
+	@echo "... srcpp/Capture.o"
+	@echo "... srcpp/Capture.i"
+	@echo "... srcpp/Capture.s"
+	@echo "... srcpp/Exploration.o"
+	@echo "... srcpp/Exploration.i"
+	@echo "... srcpp/Exploration.s"
+	@echo "... srcpp/Game.o"
+	@echo "... srcpp/Game.i"
+	@echo "... srcpp/Game.s"
+	@echo "... srcpp/GameOver.o"
+	@echo "... srcpp/GameOver.i"
+	@echo "... srcpp/GameOver.s"
+	@echo "... srcpp/Pokedex.o"
+	@echo "... srcpp/Pokedex.i"
+	@echo "... srcpp/Pokedex.s"
+	@echo "... srcpp/Pokemon.o"
+	@echo "... srcpp/Pokemon.i"
+	@echo "... srcpp/Pokemon.s"
+	@echo "... srcpp/Pokemon_PC.o"
+	@echo "... srcpp/Pokemon_PC.i"
+	@echo "... srcpp/Pokemon_PC.s"
+	@echo "... srcpp/Pokemon_team.o"
+	@echo "... srcpp/Pokemon_team.i"
+	@echo "... srcpp/Pokemon_team.s"
+	@echo "... srcpp/Pokemon_vector.o"
+	@echo "... srcpp/Pokemon_vector.i"
+	@echo "... srcpp/Pokemon_vector.s"
+	@echo "... srcpp/State.o"
+	@echo "... srcpp/State.i"
+	@echo "... srcpp/State.s"
+	@echo "... srcpp/TitleScreen.o"
+	@echo "... srcpp/TitleScreen.i"
+	@echo "... srcpp/TitleScreen.s"
+	@echo "... srcpp/main.o"
+	@echo "... srcpp/main.i"
+	@echo "... srcpp/main.s"
 .PHONY : help
 
 

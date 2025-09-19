@@ -3,7 +3,7 @@
 #include <string>
 #include <fstream>
 #include <sstream>
-#include "Pokedex.hpp"
+#include "../incpp/Pokedex.hpp"
 
 Pokedex::Pokedex() {
       int cmpt = 0;
