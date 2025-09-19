@@ -6,6 +6,7 @@
 #define POKEMON_HPP
 
 #include <string>
+#include "Pokedex.hpp"
 
 class Pokemon {
 
@@ -36,6 +37,9 @@ class Pokemon {
 
     void attackOther(Pokemon &other);
     void takeDamage(double damage);
+
+    void evolve(Pokedex * pokedex);
+    void evolve(Pokemon& pokemon);
 
 };
 

@@ -56,3 +56,34 @@ void Pokemon::attackOther(Pokemon &other){
 
 }
 
+
+// Since there is no real indicator in the pokedex file for evolution, I will take the next pokemon and assume that if it has more hp, it's an evolution, if not the it's the next pokemon.
+void Pokemon::evolve(Pokedex * pokedex) {
+  int idTemp = id+1;
+  Pokemon & nextPokemon = pokedex->findById(idTemp);
+  if (maxHP<=nextPokemon.maxHP) {
+    double missingHP = maxHP-currentHP;
+    maxHP = nextPokemon.getHp();
+    currentHP=maxHP-missingHP;    // Not sure how it's done in the real game.
+    attack = nextPokemon.getAtk();
+    defense = nextPokemon.getDef();
+    id = nextPokemon.getId();
+    name = nextPokemon.getName();
+    //evolution ++;   //To uncomment once evolution is initialized.
+  }
+  else {
+    std::cerr<<name<<" was the last evolution of this pokemon"<<std::endl;
+  }
+}
+
+void Pokemon::evolve(Pokemon & nextPokemon) {
+    double missingHP = maxHP-currentHP;
+    maxHP = nextPokemon.getHp();
+    currentHP=maxHP-missingHP;    // Not sure how it's done in the real game.
+    attack = nextPokemon.getAtk();
+    defense = nextPokemon.getDef();
+    id = nextPokemon.getId();
+    name = nextPokemon.getName();
+    //evolution ++;   //To uncomment once evolution is initialized.
+}
+

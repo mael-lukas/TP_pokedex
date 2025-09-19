@@ -23,6 +23,14 @@ int main() {
 
     mienshao.attackOther(sunkern);
 
+    //This should test the evolve function where you give the next pokemon.
+    // I can also be done with the pokedex as argument, but since the pokedex wasn't working for me, I can't test at all.
+    // Pokemon firstPokemon = Pokemon (1,"Bulbasaur",318,45,49);
+    // Pokemon secondpokemon = Pokemon(2,"Ivysaur",405,60,62);
+    // firstPokemon.evolve(secondpokemon);
+    // firstPokemon.displayInfo();
+
+
     Pokedex* pokedex = Pokedex::getInstance();
     Pokedex* pokedex2 = Pokedex::getInstance();
 
