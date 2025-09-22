@@ -5,32 +5,32 @@ Pokemon_team::Pokemon_team(Pokemon_PC &PC): PC(PC) {}
 Pokemon_team::~Pokemon_team(){}
 
 void Pokemon_team::addToTeam(std::string name) {
-	if (not PC.isInPC(name)) {
-		std::cout << "The Pokemon " << name << " is not in your PC !" << std::endl;
+	if (pokemons.size() >= 6) {
+		std::cout << "Your team is already full!" << std::endl;
 	}
 	else {
-		Pokemon &pokemon = PC.findByName(name);
-		if (pokemons.size() >= 6) {
-			std::cout << "Your team is already full!" << std::endl;
+		if (not PC.isInPC(name)) {
+			std::cout << "The Pokemon " << name << " is not in your PC !" << std::endl;
 		}
 		else {
-			std::cout << name << " (ID: " << pokemon.getId() << ") added to team" << std::endl;
-			pokemons.push_back(pokemon);
+			Pokemon pokemon = PC.findByName(name);
 			PC.removeFromPC(pokemon);
+			pokemons.push_back(pokemon);
+			std::cout << name << " (ID: " << pokemon.getId() << ") added to team" << std::endl;
 		}
 	}
 }
 
 void Pokemon_team::addToTeam(int id) {
-	if (not PC.isInPC(id)) {
-		std::cout << "The Pokemon with ID " << id << " is not in your PC !" << std::endl;
+	if (pokemons.size() >= 6) {
+		std::cout << "Your team is already full!" << std::endl;
 	}
 	else {
-		Pokemon &pokemon = PC.findById(id);
-		if (pokemons.size() >= 6) {
-			std::cout << "Your team is already full!" << std::endl;
+		if (not PC.isInPC(id)) {
+			std::cout << "The Pokemon with ID " << id << " is not in your PC !" << std::endl;
 		}
 		else {
+			Pokemon &pokemon = PC.findById(id);
 			pokemons.push_back(pokemon);
 			PC.removeFromPC(pokemon);
 			std::cout << pokemon.getName() << " (ID: " << id << ") added to team" << std::endl;

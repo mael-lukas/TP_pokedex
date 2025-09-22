@@ -12,7 +12,7 @@ void Pokemon_PC::addToPC(Pokemon pokemon){
 
 void Pokemon_PC::removeFromPC(Pokemon pokemon){
   int index = 0;
-  for(Pokemon partymon: pokemons){
+  for(Pokemon &partymon: pokemons){
     if(partymon.getName() == pokemon.getName()){
         pokemons.erase(pokemons.begin() + index);
         std::cout << pokemon.getName() << " (ID: " << pokemon.getId() << ") removed from PC" << std::endl;

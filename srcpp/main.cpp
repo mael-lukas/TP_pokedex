@@ -74,6 +74,9 @@ int main() {
 
     team.displayTeam();
 
+    team.findByName("Gothitelle").attackOther(team.findByName("Cryogonal"));
+    team.removeFromTeam("Cryogonal");
+
     Game* game = new Game();
     for (int i=0;i<10;i++) {
         game->testBehaviour();

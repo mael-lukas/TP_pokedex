@@ -7,9 +7,10 @@
 
 Pokedex::Pokedex() {
       int cmpt = 0;
-      std::ifstream fichier("/home/administrateur/Documents/git/TP_pokedex/pokedex.csv"); // Ouvre le fichier
+      std::string file_path = "../pokedex.csv";
+      std::ifstream fichier(file_path); // Ouvre le fichier
       if (!fichier.is_open()) { // Vérifie si le fichier est bien ouvert
-        std::cerr << "Impossible d'ouvrir le fichier : " << "/home/administrateur/Documents/git/TP_pokedex/pokedex.csv" << std::endl;
+        std::cerr << "Impossible d'ouvrir le fichier : " << file_path << std::endl;
         return;
       }
       std::string ligne;
