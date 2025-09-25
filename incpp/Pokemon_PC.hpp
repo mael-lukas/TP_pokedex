@@ -9,7 +9,7 @@ class Pokemon_PC: public Pokemon_vector {
     ~Pokemon_PC();
 
 	void addToPC(Pokemon pokemon);
-    void removeFromPC(Pokemon pokemon);
+  void removeFromPC(Pokemon pokemon);
 
 	void displayPC();
 	bool isInPC(std::string name);
