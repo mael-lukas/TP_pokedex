@@ -32,6 +32,7 @@ classDiagram
         +isInPC(name:string)bool
     }
     class Pokemon_team {
+        +Pokemon_PC pc
         +addPokemonToTeam()
         +removePokemonFromTeam()
         +displayTeam()
