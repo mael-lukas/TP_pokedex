@@ -6,6 +6,7 @@
 
 class Game {
 	State* state;
+	sf::RenderWindow window;
 
 public:
 	Game();

@@ -8,7 +8,7 @@
 class Arena : public State {
 public:
 	Arena(Game* game);
-	void testBehaviour() override;
+	void testBehaviour();
 };
 
 #endif //ARENA_HPP

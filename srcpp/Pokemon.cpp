@@ -7,6 +7,7 @@ Pokemon::Pokemon(int id, std::string name, double maxHP, double attack, double d
 id(id),name(name),maxHP(maxHP), currentHP(maxHP), attack(attack), defense(defense) {
   /*std::cout << "Pokemon " << name << " constructed!" << std::endl;
   std::cout << std::endl;*/
+  this->spritePath = "../image_pokedex-20250910/pokemon/"+std::to_string(id)+".png";
   counter++;
 }
 
@@ -24,7 +25,7 @@ Pokemon::~Pokemon() {
 }
 
 void Pokemon::displayInfo() const{
-  std::cout << name << ":  Current HP: " << currentHP << " HP (max: " << maxHP << ")  ATK: " << attack << "  DEF " << defense << std::endl;
+  std::cout << name << " (ID: " << id << ") :  Current HP: " << currentHP << " HP (max: " << maxHP << ")  ATK: " << attack << "  DEF " << defense << std::endl;
 }
 
 void Pokemon::takeDamage(double damage){

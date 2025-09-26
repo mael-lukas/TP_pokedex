@@ -8,6 +8,6 @@
 class Capture : public State {
 public:
 	Capture(Game* game);
-	void testBehaviour() override;
+	void testBehaviour();
 };
 #endif //CAPTURE_HPP

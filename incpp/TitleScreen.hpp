@@ -6,9 +6,20 @@
 #include "Exploration.hpp"
 
 class TitleScreen : public State {
+    sf::Texture background;
+    sf::Sprite spriteBackground;
+    sf::Font font;
+    sf::Font font2;
+    sf::Text title;
+    sf::Text indication;
+    float timePassed = 0.f;
+
 public:
     TitleScreen(Game* game);
-    void testBehaviour() override;
+    void handleEvent(sf::Event &event) override;
+    void update(float deltaTime) override;
+    void render(sf::RenderWindow &window) override;
+
 };
 
 #endif //TITLESCREEN_HPP

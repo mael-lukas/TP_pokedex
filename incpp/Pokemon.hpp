@@ -17,6 +17,7 @@ class Pokemon {
     double attack;
     double defense;
     static int counter;
+	std::string spritePath;
 
 
   public:
@@ -32,6 +33,7 @@ class Pokemon {
     double getHp() const {return currentHP;}
     double getAtk() const {return attack;}
     double getDef() const {return defense;}
+	std::string getSpritePath() {return spritePath;}
     static int getCounter() {return counter;}
 
     void attackOther(Pokemon &other);

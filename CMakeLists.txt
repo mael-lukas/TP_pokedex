@@ -11,14 +11,10 @@ add_executable(beuzalors srcpp/main.cpp incpp/Pokemon.hpp srcpp/Pokemon.cpp incp
         srcpp/Game.cpp
         incpp/TitleScreen.hpp
         srcpp/TitleScreen.cpp
-        srcpp/Exploration.cpp
         incpp/Exploration.hpp
-        incpp/Capture.hpp
-        srcpp/Capture.cpp
+        srcpp/Exploration.cpp
         incpp/Arena.hpp
         srcpp/Arena.cpp
-        incpp/GameOver.hpp
-        srcpp/GameOver.cpp
 )
 
 target_link_libraries(beuzalors

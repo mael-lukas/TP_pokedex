@@ -153,30 +153,6 @@ srcpp/Arena.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Arena.cpp.s
 .PHONY : srcpp/Arena.cpp.s
 
-srcpp/Capture.o: srcpp/Capture.cpp.o
-.PHONY : srcpp/Capture.o
-
-# target to build an object file
-srcpp/Capture.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Capture.cpp.o
-.PHONY : srcpp/Capture.cpp.o
-
-srcpp/Capture.i: srcpp/Capture.cpp.i
-.PHONY : srcpp/Capture.i
-
-# target to preprocess a source file
-srcpp/Capture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Capture.cpp.i
-.PHONY : srcpp/Capture.cpp.i
-
-srcpp/Capture.s: srcpp/Capture.cpp.s
-.PHONY : srcpp/Capture.s
-
-# target to generate assembly for a file
-srcpp/Capture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Capture.cpp.s
-.PHONY : srcpp/Capture.cpp.s
-
 srcpp/Exploration.o: srcpp/Exploration.cpp.o
 .PHONY : srcpp/Exploration.o
 
@@ -224,30 +200,6 @@ srcpp/Game.s: srcpp/Game.cpp.s
 srcpp/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Game.cpp.s
 .PHONY : srcpp/Game.cpp.s
-
-srcpp/GameOver.o: srcpp/GameOver.cpp.o
-.PHONY : srcpp/GameOver.o
-
-# target to build an object file
-srcpp/GameOver.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/GameOver.cpp.o
-.PHONY : srcpp/GameOver.cpp.o
-
-srcpp/GameOver.i: srcpp/GameOver.cpp.i
-.PHONY : srcpp/GameOver.i
-
-# target to preprocess a source file
-srcpp/GameOver.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/GameOver.cpp.i
-.PHONY : srcpp/GameOver.cpp.i
-
-srcpp/GameOver.s: srcpp/GameOver.cpp.s
-.PHONY : srcpp/GameOver.s
-
-# target to generate assembly for a file
-srcpp/GameOver.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/GameOver.cpp.s
-.PHONY : srcpp/GameOver.cpp.s
 
 srcpp/Pokedex.o: srcpp/Pokedex.cpp.o
 .PHONY : srcpp/Pokedex.o
@@ -453,18 +405,12 @@ help:
 	@echo "... srcpp/Arena.o"
 	@echo "... srcpp/Arena.i"
 	@echo "... srcpp/Arena.s"
-	@echo "... srcpp/Capture.o"
-	@echo "... srcpp/Capture.i"
-	@echo "... srcpp/Capture.s"
 	@echo "... srcpp/Exploration.o"
 	@echo "... srcpp/Exploration.i"
 	@echo "... srcpp/Exploration.s"
 	@echo "... srcpp/Game.o"
 	@echo "... srcpp/Game.i"
 	@echo "... srcpp/Game.s"
-	@echo "... srcpp/GameOver.o"
-	@echo "... srcpp/GameOver.i"
-	@echo "... srcpp/GameOver.s"
 	@echo "... srcpp/Pokedex.o"
 	@echo "... srcpp/Pokedex.i"
 	@echo "... srcpp/Pokedex.s"
