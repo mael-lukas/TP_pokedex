@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/beuzalors.dir/srcpp/Pokedex.cpp.o.d"
   "CMakeFiles/beuzalors.dir/srcpp/Pokemon.cpp.o"
   "CMakeFiles/beuzalors.dir/srcpp/Pokemon.cpp.o.d"
+  "CMakeFiles/beuzalors.dir/srcpp/PokemonSelect.cpp.o"
+  "CMakeFiles/beuzalors.dir/srcpp/PokemonSelect.cpp.o.d"
   "CMakeFiles/beuzalors.dir/srcpp/Pokemon_PC.cpp.o"
   "CMakeFiles/beuzalors.dir/srcpp/Pokemon_PC.cpp.o.d"
   "CMakeFiles/beuzalors.dir/srcpp/Pokemon_team.cpp.o"

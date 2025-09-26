@@ -249,6 +249,30 @@ srcpp/Pokemon.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokemon.cpp.s
 .PHONY : srcpp/Pokemon.cpp.s
 
+srcpp/PokemonSelect.o: srcpp/PokemonSelect.cpp.o
+.PHONY : srcpp/PokemonSelect.o
+
+# target to build an object file
+srcpp/PokemonSelect.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/PokemonSelect.cpp.o
+.PHONY : srcpp/PokemonSelect.cpp.o
+
+srcpp/PokemonSelect.i: srcpp/PokemonSelect.cpp.i
+.PHONY : srcpp/PokemonSelect.i
+
+# target to preprocess a source file
+srcpp/PokemonSelect.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/PokemonSelect.cpp.i
+.PHONY : srcpp/PokemonSelect.cpp.i
+
+srcpp/PokemonSelect.s: srcpp/PokemonSelect.cpp.s
+.PHONY : srcpp/PokemonSelect.s
+
+# target to generate assembly for a file
+srcpp/PokemonSelect.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/PokemonSelect.cpp.s
+.PHONY : srcpp/PokemonSelect.cpp.s
+
 srcpp/Pokemon_PC.o: srcpp/Pokemon_PC.cpp.o
 .PHONY : srcpp/Pokemon_PC.o
 
@@ -417,6 +441,9 @@ help:
 	@echo "... srcpp/Pokemon.o"
 	@echo "... srcpp/Pokemon.i"
 	@echo "... srcpp/Pokemon.s"
+	@echo "... srcpp/PokemonSelect.o"
+	@echo "... srcpp/PokemonSelect.i"
+	@echo "... srcpp/PokemonSelect.s"
 	@echo "... srcpp/Pokemon_PC.o"
 	@echo "... srcpp/Pokemon_PC.i"
 	@echo "... srcpp/Pokemon_PC.s"

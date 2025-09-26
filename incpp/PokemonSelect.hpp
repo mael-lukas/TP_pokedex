@@ -10,9 +10,9 @@ class PokemonSelect : public State {
 	std::vector<Pokemon> team;
 public:
 	PokemonSelect(Game* game,std::string name,std::vector<Pokemon> team);
-	void handleEvent(sf::Event &event);
-	void update(float dt);
-	void render(sf::RenderWindow &window);
+	void handleEvent(sf::Event &event) override;
+	void update(float dt) override;
+	void render(sf::RenderWindow &window) override;
 };
 
 #endif //POKEMONSELECT_HPP

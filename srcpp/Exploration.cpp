@@ -96,7 +96,7 @@ void Exploration::update(float dt) {
 	}
 	if (sprite.getGlobalBounds().intersects(eventZonesTest[0].collisionZone)) {
 		std::cout << "Collision" << std::endl;
-//		game->changeState(new PokemonSelect(game,eventZonesTest[0].name,eventZonesTest[0].team));
+		game->changeState(new PokemonSelect(game,eventZonesTest[0].name,eventZonesTest[0].team));
 	}
 }
 

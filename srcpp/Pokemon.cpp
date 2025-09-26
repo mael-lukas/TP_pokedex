@@ -15,6 +15,7 @@ Pokemon::Pokemon(const Pokemon &other):
 id(other.id),name(other.name),maxHP(other.maxHP), currentHP(other.maxHP), attack(other.attack), defense(other.defense){
   /*std::cout << "Pokemon " << name << " copied!" << std::endl;
   std::cout << std::endl;*/
+  this->spritePath = "../image_pokedex-20250910/pokemon/"+std::to_string(id)+".png";
   counter++;
 }
 
