@@ -77,7 +77,7 @@ int main() {
     team.findByName("Gothitelle").attackOther(team.findByName("Cryogonal"));
     team.removeFromTeam("Cryogonal");
 
-    Game *game = new Game();
+    Game *game = new Game(PC);
     game->run();
 
     return 0;

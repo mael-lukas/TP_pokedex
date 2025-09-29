@@ -45,3 +45,7 @@ bool Pokemon_PC::isInPC(int id) {
   }
   return false;
 }
+
+std::vector<Pokemon> &Pokemon_PC::getPokemons() {
+  return pokemons;
+}
