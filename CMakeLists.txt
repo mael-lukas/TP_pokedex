@@ -16,6 +16,8 @@ add_executable(beuzalors srcpp/main.cpp incpp/Pokemon.hpp srcpp/Pokemon.cpp incp
         srcpp/Arena.cpp
         incpp/PokemonSelect.hpp
         srcpp/PokemonSelect.cpp
+        incpp/GameOver.hpp
+        srcpp/GameOver.cpp
 )
 
 target_link_libraries(beuzalors
