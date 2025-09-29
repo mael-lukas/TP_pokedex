@@ -68,10 +68,10 @@ classDiagram
 ```  
 
 Le Pokedex est créé à partir d'un fichier CSV. C'est également un singleton, on ne peut donc pas instancier plusieurs objets de cette classe. On y accède via la méthode statique `Pokedex::getInstance()`.  
-Le joueur possède un PC représenté par la classe `Pokemon_PC` et une équipe active représentée par la classe `Pokemon_team` limitée à 6 pokemons utilisés en combat. Le PC et l'équipe partage les mêmes Pokemons, ainsi sortir un Pokemon de l'équipe le remet dans le PC et inversement.
+Le joueur possède un PC représenté par la classe [`Pokemon_PC`](/srcpp/Pokemon_PC.cpp) et une équipe active représentée par la classe [`Pokemon_team`](/srcpp/Pokemon_team.cpp) limitée à 6 pokemons utilisés en combat. Le PC et l'équipe partage les mêmes Pokemons, ainsi sortir un Pokemon de l'équipe le remet dans le PC et inversement.
 
 ### Machine à état
-Le code utiliser la design pattern State pour gérer les différentes phases du jeu. Chaque phase est représentée par une classe dérivée de la classe abstraite `State`. Le diagramme suivant illustre cette architecture:
+Le code utiliser la design pattern State pour gérer les différentes phases du jeu. Chaque phase est représentée par une classe dérivée de la classe abstraite [`State`](/incpp/State.hpp). Le diagramme suivant illustre cette architecture:
 
 ```mermaid
 classDiagram
@@ -149,5 +149,5 @@ classDiagram
     Arena ..|> State
     GameOver ..|> State
 ```
-Les différents états `TitleScreen`, `Exploration`, `PokemonSelect`, `Arena` et `GameOver` implémentent l'interface State. La classe `Game` gère la fenêtre du jeu et le changement d'état via la méthode `changeState()`. La méthode `run()` est executée indéfiniment pour appeler les méthodes `handleEvent()`, `update()` et `render()` de l'état en cours pour gérer les événements, mettre à jour la logique du jeu et dessiner les éléments à l'écran.  
-La boucle de jeu est: Le joueur passe de l'écran d'accueil à l'exploration en appuyant sur Enter, il peut ensuite se déplacer pour choisir un dresseur a affronter. S'il rentre dans une boite de collision l'état change pour `PokemonSelect` où il choisit son équipe. Ensuite l'état change pour `Arena` où le combat se déroule. Si le joueur perd, l'état change pour `GameOver`.
+Les différents états [`TitleScreen`](/srcpp/TitleScreen.cpp), [`Exploration`](/srcpp/Exploration), [`PokemonSelect`](/srcpp/PokemonSelect), [`Arena`](/srcpp/Arena.cpp) et [`GameOver`](/srcpp/GameOver.cpp) implémentent l'interface State. La classe [`Game`](/srcpp/Game.cpp) gère la fenêtre du jeu et le changement d'état via la méthode `changeState()`. La méthode `run()` est executée indéfiniment pour appeler les méthodes `handleEvent()`, `update()` et `render()` de l'état en cours pour gérer les événements, mettre à jour la logique du jeu et dessiner les éléments à l'écran.  
+La boucle de jeu est: Le joueur passe de [`TitleScreen`](/srcpp/TitleScreen.cpp) à [`Exploration`](/srcpp/Exploration.cpp) en appuyant sur Enter, il peut ensuite se déplacer pour choisir un dresseur à affronter. S'il rentre dans une boite de collision l'état change pour [`PokemonSelect`](/srcpp/PokemonSelect) où il choisit son équipe. S'il appuie sur Escape il retourne en [`Exploration`](/srcpp/Exploration.cpp) Ensuite l'état change pour [`Arena`](/srcpp/Arena.cpp) où le combat se déroule. Si le joueur perd, l'état change pour [`GameOver`](/srcpp/GameOver.cpp).
