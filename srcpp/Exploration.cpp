@@ -12,21 +12,55 @@ Exploration::Exploration(Game* game) : State(game) {
 	sprite.setPosition(750, 750);
 	updateSprite();
 
-	sf::FloatRect eventBoxTest = sf::FloatRect(0,0,1550,400);
-	sf::RectangleShape eventBoxShape = sf::RectangleShape(sf::Vector2f(eventBoxTest.width, eventBoxTest.height));
-	eventBoxShape.setPosition(eventBoxTest.left, eventBoxTest.top);
-	eventBoxShape.setFillColor(sf::Color(255, 0, 0, 128));
 
-	EventZone eventZoneTest {eventBoxTest,
-						     eventBoxShape,
-				     "Inezia",
-		             {Pokedex::getInstance()->findByName("Emolga"),
-		             	Pokedex::getInstance()->findByName("Flaaffy"),
-		             	Pokedex::getInstance()->findByName("Zebstrika")
-		             }
+/////////////////////////////////////////////// Defining event trigger areas for every gym leader ////////////////////////////////////////////////////////////////////////
+	sf::FloatRect cherenEvent = sf::FloatRect(0,0,180,360);
+	EventZone cherenZone {cherenEvent,"Cheren",
+	{Pokedex::getInstance()->findByName("Patrat"),Pokedex::getInstance()->findByName("Lillipup")}
 	};
+	eventZones.push_back(cherenZone);
 
-	eventZonesTest.push_back(eventZoneTest);
+	sf::FloatRect roxieEvent = sf::FloatRect(198,0,180,360);
+	EventZone roxieZone {roxieEvent,"Roxie",
+	{Pokedex::getInstance()->findByName("Koffing"),Pokedex::getInstance()->findByName("Whirlipede")}
+	};
+	eventZones.push_back(roxieZone);
+
+	sf::FloatRect burghEvent = sf::FloatRect(394,0,180,360);
+	EventZone burghZone {burghEvent,"Burgh",
+	{Pokedex::getInstance()->findByName("Swadloon"),Pokedex::getInstance()->findByName("Dwebble"),Pokedex::getInstance()->findByName("Leavanny")}
+	};
+	eventZones.push_back(burghZone);
+
+	sf::FloatRect elesaEvent = sf::FloatRect(590,0,180,360);
+	EventZone elesaZone {elesaEvent,"Elesa",
+		{Pokedex::getInstance()->findByName("Emolga"),Pokedex::getInstance()->findByName("Flaaffy"),Pokedex::getInstance()->findByName("Zebstrika")}
+	};
+	eventZones.push_back(elesaZone);
+
+	sf::FloatRect clayEvent = sf::FloatRect(780,0,180,360);
+	EventZone clayZone {clayEvent,"Clay",
+		{Pokedex::getInstance()->findByName("Krokorok"),Pokedex::getInstance()->findByName("Sandslash"),Pokedex::getInstance()->findByName("Excadrill")}
+	};
+	eventZones.push_back(clayZone);
+
+	sf::FloatRect skylaEvent = sf::FloatRect(980,0,180,360);
+	EventZone skylaZone {skylaEvent,"Skyla",
+		{Pokedex::getInstance()->findByName("Swoobat"),Pokedex::getInstance()->findByName("Skarmory"),Pokedex::getInstance()->findByName("Swanna")}
+	};
+	eventZones.push_back(skylaZone);
+
+	sf::FloatRect draydenEvent = sf::FloatRect(1175,0,180,360);
+	EventZone draydenZone {draydenEvent,"Drayden",
+		{Pokedex::getInstance()->findByName("Druddigon"),Pokedex::getInstance()->findByName("Flygon"),Pokedex::getInstance()->findByName("Haxorus")}
+	};
+	eventZones.push_back(draydenZone);
+
+	sf::FloatRect marlonEvent = sf::FloatRect(1370,0,180,360);
+	EventZone marlonZone {marlonEvent,"Marlon",
+		{Pokedex::getInstance()->findByName("Carracosta"),Pokedex::getInstance()->findByName("Wailord"),Pokedex::getInstance()->findByName("Jellicent")}
+	};
+	eventZones.push_back(marlonZone);
 
 }
 
@@ -94,15 +128,17 @@ void Exploration::update(float dt) {
 		currentFrame = 0;
 		updateSprite();
 	}
-	if (sprite.getGlobalBounds().intersects(eventZonesTest[0].collisionZone)) {
-		std::cout << "Collision" << std::endl;
-		game->changeState(new PokemonSelect(game,eventZonesTest[0].name,eventZonesTest[0].team));
+	for (EventZone ez : eventZones) {
+		if (sprite.getGlobalBounds().intersects(ez.collisionZone)) {
+			std::cout << "Collision" << std::endl;
+			game->changeState(new PokemonSelect(game,ez.name,ez.team));
+		}
 	}
+
 }
 
 void Exploration::render(sf::RenderWindow &window) {
 	window.draw(spriteBackground);
 	window.draw(sprite);
-	window.draw(eventZonesTest[0].eventBoxShape);
 }
 

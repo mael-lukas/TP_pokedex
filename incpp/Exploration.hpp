@@ -34,11 +34,10 @@ class Exploration : public State {
 
 	struct EventZone {
 		sf::FloatRect collisionZone;
-		sf::RectangleShape eventBoxShape;
 		std::string name;
 		std::vector<Pokemon> team;
 	};
-	std::vector<EventZone> eventZonesTest;
+	std::vector<EventZone> eventZones;
 
 public:
 	Exploration(Game* game);

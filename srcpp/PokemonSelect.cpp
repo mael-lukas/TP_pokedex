@@ -7,6 +7,11 @@ PokemonSelect::PokemonSelect(Game* game,std::string name,std::vector<Pokemon> te
 }
 
 void PokemonSelect::handleEvent(sf::Event &event) {
+	if (event.type == sf::Event::KeyPressed) {
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+			game->changeState(new Exploration(game));
+		}
+	}
 }
 
 void PokemonSelect::update(float dt) {
