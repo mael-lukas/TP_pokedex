@@ -17,8 +17,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/beuzalors.dir/srcpp/Pokemon_team.cpp.o.d"
   "CMakeFiles/beuzalors.dir/srcpp/Pokemon_vector.cpp.o"
   "CMakeFiles/beuzalors.dir/srcpp/Pokemon_vector.cpp.o.d"
-  "CMakeFiles/beuzalors.dir/srcpp/State.cpp.o"
-  "CMakeFiles/beuzalors.dir/srcpp/State.cpp.o.d"
   "CMakeFiles/beuzalors.dir/srcpp/TitleScreen.cpp.o"
   "CMakeFiles/beuzalors.dir/srcpp/TitleScreen.cpp.o.d"
   "CMakeFiles/beuzalors.dir/srcpp/main.cpp.o"

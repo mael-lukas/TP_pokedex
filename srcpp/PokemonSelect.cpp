@@ -1,7 +1,8 @@
 #include "../incpp/PokemonSelect.hpp"
 #include <iostream>
 
-PokemonSelect::PokemonSelect(Game* game,std::string name,std::vector<Pokemon> team) : State(game) {
+PokemonSelect::PokemonSelect(Game* game,std::string name,std::vector<Pokemon> team) {
+	this->game = game;
 	this->name = name;
 	this->team = team;
 }

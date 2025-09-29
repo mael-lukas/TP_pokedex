@@ -9,7 +9,7 @@ void Game::changeState(State* newState) {
 	state = newState;
 }
 
-void Game::testBehaviour() {
+void Game::run() {
 	sf::Clock clock;
 	while (window.isOpen()) {
 		sf::Event event;

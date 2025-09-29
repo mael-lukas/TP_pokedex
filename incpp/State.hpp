@@ -8,7 +8,6 @@ class Game;
 class State {
 	protected:
 	Game* game;
-	State(Game* game);
 
 	public:
 	virtual ~State() = default;

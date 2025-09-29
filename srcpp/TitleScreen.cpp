@@ -1,7 +1,8 @@
 #include "../incpp/TitleScreen.hpp"
 #include <iostream>
 
-TitleScreen::TitleScreen(Game* game) : State(game) {
+TitleScreen::TitleScreen(Game* game) {
+    this->game = game;
     font.loadFromFile("../Pokemon Solid.ttf");
     font2.loadFromFile("../arial.ttf");
     background.loadFromFile("../qsutbgg.jpg");

@@ -1,7 +1,8 @@
 #include "../incpp/Exploration.hpp"
 #include <iostream>
 
-Exploration::Exploration(Game* game) : State(game) {
+Exploration::Exploration(Game* game) {
+	this->game = game;
 	playerCharacter.loadFromFile("../Sprite-0001.png");
 	background.loadFromFile("../Sprite-0002.png");
 	spriteBackground.setTexture(background);
@@ -134,7 +135,6 @@ void Exploration::update(float dt) {
 			game->changeState(new PokemonSelect(game,ez.name,ez.team));
 		}
 	}
-
 }
 
 void Exploration::render(sf::RenderWindow &window) {

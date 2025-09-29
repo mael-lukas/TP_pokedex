@@ -345,30 +345,6 @@ srcpp/Pokemon_vector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/Pokemon_vector.cpp.s
 .PHONY : srcpp/Pokemon_vector.cpp.s
 
-srcpp/State.o: srcpp/State.cpp.o
-.PHONY : srcpp/State.o
-
-# target to build an object file
-srcpp/State.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/State.cpp.o
-.PHONY : srcpp/State.cpp.o
-
-srcpp/State.i: srcpp/State.cpp.i
-.PHONY : srcpp/State.i
-
-# target to preprocess a source file
-srcpp/State.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/State.cpp.i
-.PHONY : srcpp/State.cpp.i
-
-srcpp/State.s: srcpp/State.cpp.s
-.PHONY : srcpp/State.s
-
-# target to generate assembly for a file
-srcpp/State.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/beuzalors.dir/build.make CMakeFiles/beuzalors.dir/srcpp/State.cpp.s
-.PHONY : srcpp/State.cpp.s
-
 srcpp/TitleScreen.o: srcpp/TitleScreen.cpp.o
 .PHONY : srcpp/TitleScreen.o
 
@@ -453,9 +429,6 @@ help:
 	@echo "... srcpp/Pokemon_vector.o"
 	@echo "... srcpp/Pokemon_vector.i"
 	@echo "... srcpp/Pokemon_vector.s"
-	@echo "... srcpp/State.o"
-	@echo "... srcpp/State.i"
-	@echo "... srcpp/State.s"
 	@echo "... srcpp/TitleScreen.o"
 	@echo "... srcpp/TitleScreen.i"
 	@echo "... srcpp/TitleScreen.s"

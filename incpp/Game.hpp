@@ -11,7 +11,7 @@ class Game {
 public:
 	Game();
 	void changeState(State* newState);
-	void testBehaviour();
+	void run();
 };
 
 #endif //GAME_HPP

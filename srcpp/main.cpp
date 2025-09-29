@@ -78,7 +78,7 @@ int main() {
     team.removeFromTeam("Cryogonal");
 
     Game *game = new Game();
-    game->testBehaviour();
+    game->run();
 
     return 0;
 }
